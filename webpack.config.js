@@ -23,6 +23,14 @@ module.exports = {
                 { loader: "style-loader" },
                 { loader: "css-loader" },
             ]
+        }, {
+            test: /\.(eot|woff|woff2|svg|ttf)\??.*$/,
+            use: [{
+                loader: "file-loader",
+                options: {
+                    outputPath: '/iconfont/'
+                }
+            }, ]
         }, ]
     }
 }
