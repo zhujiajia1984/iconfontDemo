@@ -24,6 +24,20 @@ module.exports = {
                 { loader: "css-loader" },
             ]
         }, {
+            test: /\.less$/,
+            use: [
+                { loader: "style-loader" },
+                { loader: "css-loader" },
+                {
+                    loader: "less-loader",
+                    options: {
+                        modifyVars: {
+                            '@primary-color': '#1DA57A',
+                        }
+                    }
+                }
+            ]
+        }, {
             test: /\.(eot|woff|woff2|svg|ttf)\??.*$/,
             use: [{
                 loader: "file-loader",
