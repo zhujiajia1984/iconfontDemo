@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // import './index.css';
 // import 'antd/dist/antd.less';
+// import './index.less';
 import { Button } from 'antd';
 // import '../dist/iconfont/iconfont.css';
-import './index.less';
 
 //
 const a1 = <div className="container">Hello, world!222
